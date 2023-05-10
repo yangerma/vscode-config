@@ -1,0 +1,92 @@
+{
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "bash",
+      "args": [
+        "-l"
+      ],
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh",
+      "args": [
+        "-l"
+      ]
+    },
+    "fish": {
+      "path": "fish",
+      "args": [
+        "-l"
+      ]
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    }
+  },
+  "remote.SSH.useLocalServer": false,
+  "editor.cursorStyle": "block",
+  "vim.useCtrlKeys": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<C-h>"
+      ],
+      "after": [
+        "g",
+        "T"
+      ]
+    },
+    {
+      "before": [
+        "<C-l>"
+      ],
+      "after": [
+        "g",
+        "t"
+      ]
+    }
+  ],
+  "workbench.editor.enablePreview": false,
+  "files.associations": {
+    "*.tpp": "cpp",
+    "*.tcc": "cpp",
+    "*.hpp": "cpp"
+  },
+  "editor.tabSize": 2,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "task.problemMatchers.neverPrompt": {
+    "shell": true
+  },
+  "[markdown]": {
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "clangd.onConfigChanged": "restart",
+  "git.autoRepositoryDetection": false,
+  "vim.sneakUseIgnorecaseAndSmartcase": true,
+  "vim.ignorecase": false,
+  "vim.smartcase": false,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.inlineSuggest.enabled": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "cmake.configureOnOpen": true
+}
