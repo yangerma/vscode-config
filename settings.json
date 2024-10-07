@@ -10,12 +10,6 @@
       ],
       "icon": "terminal-bash"
     },
-    "zsh": {
-      "path": "zsh",
-      "args": [
-        "-l"
-      ]
-    },
     "fish": {
       "path": "fish",
       "args": [
@@ -26,13 +20,10 @@
       "path": "tmux",
       "icon": "terminal-tmux"
     },
-    "pwsh": {
-      "path": "pwsh",
-      "icon": "terminal-powershell"
-    }
   },
   "remote.SSH.useLocalServer": false,
   "editor.cursorStyle": "block",
+  "editor.inlayHints.enabled": "off",
   "vim.useCtrlKeys": true,
   "vim.normalModeKeyBindings": [
     {
@@ -58,7 +49,10 @@
   "files.associations": {
     "*.tpp": "cpp",
     "*.tcc": "cpp",
-    "*.hpp": "cpp"
+    "*.hpp": "cpp",
+    "*.inc": "cpp",
+    "*.def": "cpp",
+    "*.h": "cpp"
   },
   "editor.tabSize": 2,
   "workbench.editorAssociations": {
@@ -78,6 +72,10 @@
   },
   "C_Cpp.intelliSenseEngine": "disabled",
   "clangd.onConfigChanged": "restart",
+  "clangd.arguments": [
+      "--clang-tidy",
+      "--header-insertion=never",
+  ],
   "git.autoRepositoryDetection": false,
   "vim.sneakUseIgnorecaseAndSmartcase": true,
   "vim.ignorecase": false,
@@ -88,5 +86,9 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.inlineSuggest.enabled": true,
   "security.workspace.trust.untrustedFiles": "open",
-  "cmake.configureOnOpen": true
+  "cmake.configureOnOpen": true,
+  "cmake.pinnedCommands": [
+      "workbench.action.tasks.configureTaskRunner",
+      "workbench.action.tasks.runTask"
+  ]
 }
